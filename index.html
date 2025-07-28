@@ -1,47 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wasique Rahil - Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wasique Rahil - Portfolio</title>
+  <link rel="stylesheet" href="style1.css" />
+  <script defer src="script.js"></script>
 </head>
 <body>
-    <header><h1>Wasique Rahil</h1>
+
+  <header>
+    <h1>Wasique Rahil</h1>
     <nav>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#contacts">Contact</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+      <button id="themeToggle">🌙</button>
     </nav>
-</header>
+  </header>
 
-<section class="hero">
-    <h2>Hi, I'm Wasique</h2>
-    <p>A passionate, web learner building simple websites using HTML & CSS.</p>
-</section>
+  <section class="hero">
+    <h2 class="typewrite" data-text='["Hi, I&apos;m Wasique", "Web Learner", "Aspiring Developer"]'></h2>
+    <p>A passionate, web learner building simple websites using HTML, CSS & JS.</p>
+  </section>
 
-<section id="about">
+  <section id="about">
     <h2>About Me</h2>
-    <p>
-        I am a BCA student exploring web development. This is my first Personal portfolio website using just HTML and CSS. I enjoy building small projects and learning new tech skills every day
-    </p>
-</section>
+    <p>I am a BCA student exploring web development. This is my first personal portfolio website using HTML and CSS. I enjoy building small projects and learning new tech skills every day.</p>
+  </section>
 
 <section id="projects">
-    <h2>Projects</h2>
-    <ul>
-        <li>Portfolio Website (This one!)</li>
-        <li>Expense Tracker (Python Based)</li>
-    </ul>
+  <h2>Projects</h2>
+  <div class="project-grid">
+    <div class="project-card">
+      <h3>Tic-Tac-Toe Game</h3>
+      <p>A simple interactive JS game for two players.</p><br>
+      <a href="https://github.com/WasiqueRahil/Tic-Tac-Toe" target="_blank">View on GitHub</a>
+    </div>
+
+    <div class="project-card">
+      <h3>Expense Tracker</h3>
+      <p>A Python CLI app to manage and track your expenses.</p>
+      <a href="https://github.com/WasiqueRahil/Expense_Tracker" target="_blank">View on GitHub</a>
+    </div>
+
+    <div class="project-card">
+      <h3>CLI Calculator</h3>
+      <p>A terminal-based calculator for basic arithmetic operations.</p>
+      <a href="https://github.com/WasiqueRahil/CLI_Calculator" target="_blank">View on GitHub</a>
+    </div>
+
+  
+  </div>
 </section>
 
 <section id="contact">
-    <h2>Contacts</h2>
-    <p>Email: <a href="mailto:mwasique79@gmail.com">mwasique79@gmail.com</a></p>
-</section>
+    <p>Email: <a id="contact-email" href="mailto:masique79@gmail.com">masique79@gmail.com</a></p>
+  </section>
 
-<footer>
+  <footer>
     <p>&copy; 2025 Wasique Rahil</p>
-</footer>
+  </footer>
+
 </body>
 </html>
+
+
